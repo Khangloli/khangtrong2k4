@@ -3,7 +3,17 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building Docker Image...'
+                echo 'Đang build ứng dụng...'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Đang test ứng dụng...'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Triển khai ứng dụng!'
             }
         }
     }
